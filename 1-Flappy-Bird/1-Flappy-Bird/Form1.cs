@@ -22,11 +22,13 @@ namespace _1_Flappy_Bird
             pipeTop.Left -= pipeSpeed;
             scoreText.Text = "Skor: " + score;
 
+            //Alttaki boru görünürden çıkarsa sağa taşı
             if(pipeBottom.Left < -150)
             {
                 pipeBottom.Left = 730;
                 score++;
-            }
+            } 
+            //Üstteki boru görünürden çıkarsa sağa taşı
             if(pipeTop.Left < -180)
             {
                 pipeTop.Left = 850;
@@ -46,7 +48,7 @@ namespace _1_Flappy_Bird
             
                 
         }
-
+        //Space tuşu bırakılırsa
         private void gamekeyisdown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
@@ -54,7 +56,7 @@ namespace _1_Flappy_Bird
                 gravity = -15;
             }
         }
-
+        //Space tuşuna basılırsa
         private void gamekeyisup(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)

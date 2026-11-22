@@ -63,9 +63,9 @@ namespace _1_Flappy_Bird.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap Gemini_Generated_Image_wku3f4wku3f4wku3 {
+        internal static System.Drawing.Bitmap bird {
             get {
-                object obj = ResourceManager.GetObject("Gemini_Generated_Image_wku3f4wku3f4wku3", resourceCulture);
+                object obj = ResourceManager.GetObject("bird", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
